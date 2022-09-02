@@ -421,6 +421,7 @@ letter-spacing: 0.03em;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 .link-team{
     display: flex;
@@ -446,10 +447,13 @@ letter-spacing: 0.03em;
 .clients-list{
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .clients-list .item{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -476,6 +480,10 @@ letter-spacing: 0.03em;
 
 
 .icon-clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
     fill: currentColor;
 }
 
@@ -483,10 +491,24 @@ letter-spacing: 0.03em;
 /* adress */
 
 .footer{
-    background-color:#2F303A;
-    padding-top: 60px;
-    padding-bottom: 60px;
+background-color: #2F303A;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+.con-footer{
+    display: flex;
     align-items: baseline;
+}
+
+.logo-contacts{
+    margin-right: 70px;
+}
+
+.social-list{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
 }
 
 .address-list{
@@ -543,6 +565,10 @@ text-decoration: none;
     color: #AFB1B8;
     align-items: center;
     justify-content: center;
+}
+
+.link-social:not(:last-child){
+    margin-right: 10px;
 }
 
 .link-social:hover {
