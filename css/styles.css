@@ -454,6 +454,7 @@ letter-spacing: 0.03em;
     border-radius: 4px;
 }
 
+
 .clients-list .item:not(:last-child){
     margin-right: 30px;
 }
@@ -464,7 +465,11 @@ letter-spacing: 0.03em;
 
 .link-clients:hover,
 .link-clients:focus{
-    color: var(--accent-color);
+    color: var(--accent-color)
+}
+
+.clients-list .item:hover{
+    border: 1px solid var(--accent-color);
 }
 
 
