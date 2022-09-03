@@ -166,7 +166,7 @@ img{
 
 
 .contacts .link{
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -183,6 +183,8 @@ img{
 }
 
 .icon-contacts{
+    justify-content: center;
+    align-items: center;
     height: 16px;
     fill: currentColor;
     margin-right: 10px;
@@ -318,6 +320,7 @@ border: 1px solid transparent;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
+    border-radius: 4px;
     justify-content: center;
     align-items: center;
 }
@@ -376,6 +379,7 @@ letter-spacing: 0.03em;
 
 .team-list{
     display: flex;
+    background-color: var(--primary-white-color);
 }
 
 .team-list .item{
@@ -433,7 +437,8 @@ letter-spacing: 0.03em;
     color:#AFB1B8;
     }
 
-.link-team:hover{
+.link-team:hover,
+.link-team:focus{
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
@@ -447,10 +452,14 @@ letter-spacing: 0.03em;
 .clients-list{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
 }
 
-.clients-list .item{
+.clients-list .item:not(:last-child){
+    margin-right: 30px;
+}
+
+.link-clients{
+    color: #AFB1B8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -460,22 +469,14 @@ letter-spacing: 0.03em;
     border-radius: 4px;
 }
 
-
-.clients-list .item:not(:last-child){
-    margin-right: 30px;
-}
-
-.link-clients{
-    color: #AFB1B8;
-}
-
 .link-clients:hover,
 .link-clients:focus{
     color: var(--accent-color)
 }
 
-.clients-list .item:hover{
-    border: 1px solid var(--accent-color);
+.link-clients:hover,
+.link-client:focus{
+    border: 1px solid var(--accent-color)
 }
 
 
@@ -557,6 +558,13 @@ text-decoration: none;
     color: var(--accent-color);
 }
 
+/* social icons */
+
+.social-list .item{
+    background-color:var(--primary-text-color);
+    border-radius: 50%;
+}
+
 .link-social {
     display: flex;
     width: 44px;
@@ -577,7 +585,7 @@ text-decoration: none;
 }
 
 .icon-social {
-    fill: currentColor;
+    fill: var(--primary-white-color);
 }
 
 h4{
@@ -598,7 +606,7 @@ h4{
     justify-content: center;
 }
 
-.portfolio-list .item{
+.portfolio-list .item:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
