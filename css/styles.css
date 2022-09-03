@@ -423,6 +423,7 @@ letter-spacing: 0.03em;
 
 
 .team-box{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
